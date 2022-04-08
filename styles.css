@@ -1,0 +1,549 @@
+body{
+    font-family: 'Manrope', sans-serif;
+    background-image: linear-gradient(to right, #002F52, #040033);
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Styling for navbar elements */
+#myNavbar {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#myNav-logo {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#navbar-override {
+    padding-top: 1.5rem;
+}
+
+#navbar-override a {
+    position: relative;
+    color: white;
+}
+
+#navbar-toggler-override {
+    padding: 0.3rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-radius: 0.25rem;
+}
+
+#navbar-toggler-override:focus {
+    box-shadow: none;
+} 
+
+#navbar-icon-override{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#myNavbar-links {
+    margin-right: 15px;
+}
+
+#navbarNav {
+    position: absolute;
+    padding: 10%;
+    top: 5rem;
+    right: 1rem;
+    background-color:#002F52;
+    border-radius: 5px;
+}
+
+#signup-button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    background-image: linear-gradient(to right, #4AFF9E, #04A397);
+    border: 0px solid transparent;
+    font-weight: 500;
+    border-radius: 5px;
+    color: white;
+}
+
+#login-button {
+    background-color: transparent;
+    padding: 8px 16px;
+    font-weight: 500;
+    color: white;
+    border: 1px solid #4AFF9E;
+    border-radius: 5px;
+}
+
+
+/* Header styling */
+
+/* 
+Inspiration for header code taken from: 
+https://github.com/adrianhajdin/project_modern_ui_ux_gpt3/tree/main/src/containers/header 
+*/
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+#header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin: 0 0 3rem;
+}
+#triangle-arrow {
+    color: #4AFF9E;
+}
+
+#header-content h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+
+    background-image: linear-gradient(45deg, #3EC4FF, #0B2F69);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+#header-content p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #A8D0FF;
+
+    margin-top: 1.5rem;
+}
+
+#header-content__input {
+    width: 100%;
+    margin: 2rem 0 0;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#header-content__input input::placeholder {
+    color: #3ec5ffb0;
+}
+
+#header-content__input input {
+    flex: 2;
+    width: 100%;
+    min-height: 50px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    background-color:hsla(198, 100%, 62%, 0.15);
+    color: #3EC4FF;
+    border: 0px solid;
+    padding: 0 1rem;
+    outline: none;
+    color: #fff;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#header-content__input button {
+    flex: 0.6;
+    width: 100%;
+    min-height: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    background-image: linear-gradient(to right, #4AFF9E, #04A397);
+    border: 0px solid transparent;
+    padding: 0 1rem;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#header-content__join-text {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+#header-content__join-text p {
+    margin: 0 0 0 0.2rem;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 38px;
+    color: #A8D0FF;
+    text-align: center;
+}
+
+#header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-image img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Brands section styling */
+#brand-section {
+    padding-bottom: 2rem;
+}
+#brand-section p {
+    text-align: center;
+    color: #A8D0FF;
+    font-size: 15px;
+}
+#brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#brands div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#brands img {
+    max-width: 80px; 
+    min-width: 80px;
+    margin: 1rem;
+    opacity: 0.3;
+}
+
+
+/* About section styling */
+.about-section {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+} 
+
+#about-card {
+    min-height: 300px;
+    padding: 2rem 1rem;
+    background-color: #f7f7f710;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.green-line {
+    background-image: linear-gradient(to right, #4AFF9E, #04A397);
+    min-width: 60px;
+    max-width: 80px;
+    height: 4px;
+}
+
+#about-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about-text-heading h2 {
+   margin-top: 0.6rem;
+   font-weight: 600;
+   font-size: 20px;
+}
+
+#about-card p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #A8D0FF;
+
+    margin-top: 0.5rem;
+}
+
+#about-card__blue-heading {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+
+    background-image: linear-gradient(45deg, #3EC4FF, #0B2F69);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+#about__more-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about__more-text h3 {
+    margin-top: 0.6rem;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+/* Styling for education section */
+.education-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-section-title h2 {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+
+    background-image: linear-gradient(45deg, #3EC4FF, #0B2F69);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+
+}
+
+.education-section-title p {
+    text-align: center;
+    font-size: 16px;
+    color: #A8D0FF;
+}
+
+.card-wrapper {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-item {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    background-color: #f7f7f710;
+    border-radius: 5px;
+}
+
+.card-icon img {
+    margin-bottom: 1rem;
+    max-width: 40px;
+}
+
+#img-circuit-board {
+    max-width: 60px;
+} 
+
+.card-text h3 {
+    margin-top: 0.5rem;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-text p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #A8D0FF;
+}
+
+
+
+
+/* Media query for larger devices */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .header-section {
+        padding-bottom: 5rem;
+    }
+
+    #header-content h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    #header-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #header-content__join-text p {
+        font-size: 14px;
+        margin-top: 0.5rem;
+    }
+
+    #brand-section {
+        margin-top: 0.5rem;
+    }
+
+    #brands img {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        max-width: 130px; 
+        min-width: 110px;
+    }
+
+    #about-card {
+        padding: 2rem 2rem;
+    }
+    #about-text-heading h2 {
+        font-size: 22px;
+    }
+    
+    #about__more-text h3 {
+        font-size: 20px;
+    }
+
+    #about-card__blue-heading {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #navbar-toggler-override{
+        display: none;
+    }
+
+    #navbarNav {
+        position: absolute;
+        padding: 1.5rem 0rem;
+        top: 0;
+        background-color: transparent;
+    }
+    #myNav-logo {
+        position: relative;
+    }
+
+    /* 
+    Nav-link animation code taken from YT-video:
+    https://www.youtube.com/watch?v=aswRKAjjWuE&ab_channel=CodingArtist
+    */
+    .nav-link {
+        position: relative;
+        margin-right: 1.5rem;
+    }
+    .nav-link::after {
+        content: "";
+        position: absolute;
+        background-color:#4AFF9E;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+
+    .header-section {
+        flex-direction: row;
+        padding-top: 7rem;
+    }
+
+    #header-content {
+        margin: 0;
+        margin-right: 5rem;
+        
+    }
+
+    #header-content__input {
+        margin: 2rem 0 0.2rem;
+    }
+
+    #brands img:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    #about-card {
+        margin-top: 2rem;
+    }
+
+    #about-text {
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    #about-text-paragraph p {
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 400px;
+    }
+
+    #about-card__blue-heading {
+        margin-top: 4rem;
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    /* about-more, code inspiration taken from:
+    https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01 
+    */
+    #about-more-text {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .about-more-item {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+    }
+    
+    #about__more-text p {
+        margin-right: 1.2rem;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .card-wrapper {
+        flex-direction: row;
+    }
+
+    .card-item {
+        margin-right: 0.6rem;
+        margin-left: 0.6rem;
+    }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
